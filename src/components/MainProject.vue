@@ -1,10 +1,10 @@
 <template>
-<div></div>
+<div>main</div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'MainProject',
 }
 </script>
 
