@@ -11,15 +11,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faDumbbell, faSpa } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
-import { faPlay, faRightLong } from '@fortawesome/free-solid-svg-icons'
+import { faPlay, faRightLong, faClock } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 /* add icons to the library */
 library.add(faCartShopping)
-library.add(faMagnifyingGlass, faRightLong)
+library.add(faMagnifyingGlass, faRightLong, faClock, faDumbbell, faSpa)
 library.add(faPlay)
 library.add(faYoutube)
 

@@ -55,7 +55,70 @@
       <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, impedit repellat similique atque beatae nulla nihil</div>
       <div class="redbutton"><a href="#"><font-awesome-icon icon="fa-brands fa-youtube" />Visit my youtube channel</a></div>
     </div>
+  </section>
+  <section class="playlist">
+    <h4>Featured playlist</h4>
+    <h6><a href="#">View al video ></a></h6>
+    <div class="songs">
+      <div class="card first">
+        <font-awesome-icon class="playbutton" icon="fa-solid fa-play" />
+      </div>
+          <div class="card second">
+            <font-awesome-icon class="playbutton" icon="fa-solid fa-play" />
+      </div>
+          <div class="card third">
+            <font-awesome-icon class="playbutton" icon="fa-solid fa-play" />
+      </div>
+      <div class="secondfloor">
+        <div class="scheda">
+          <h5>Thigs e glute workout</h5>
+          <h6>Increase your mobility</h6>
+        </div>
+       <div class="scheda">
+          <h5>Thigs e glute workout</h5>
+          <h6>Increase your mobility</h6>
+        </div>
+        <div class="scheda">
+          <h5>Thigs e glute workout</h5>
+          <h6>Increase your mobility</h6>
+        </div>
 
+      </div>
+    </div>
+  </section>
+  <section class="email">
+        <div class="left">
+      <div class="red">Join our mailing list today</div>
+      <div class="white">Inside offers & flash sales in your inbox every week</div>
+      <div class="buttons">
+        <input type="email" placeholder="Insert your mail...">
+        <div class="bluebutton"><a href="#">Subscribe</a></div>
+      </div>
+      <div class="grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ad eaque placeat aliquid illum reiciendis temporibus,</div>
+    </div>
+  </section>
+  <section class="rettangoli">
+    <div class="bluesquare">
+      <font-awesome-icon class="iconsquare" icon="fa-solid fa-clock" />
+      <h5>Team training</h5>
+      <h6>Find a partner</h6>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam est explicabo, consequatur voluptatem ex ratione.</p>
+      <h4>FInd a partner ></h4>
+    </div>
+    <div class="bluesquare">
+      <font-awesome-icon class="iconsquare" icon="fa-solid fa-dumbbell" />
+      <h5>Crossfit workout</h5>
+      <h6>Push your limits</h6>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam est explicabo, consequatur voluptatem ex ratione.</p>
+      <h4>FInd a partner ></h4>
+    </div>
+    <div class="bluesquare">
+      <font-awesome-icon class="iconsquare" icon="fa-solid fa-spa" />
+      <h5>Team training</h5>
+      <h6>Find a partner</h6>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam est explicabo, consequatur voluptatem ex ratione.</p>
+      <h4>FInd a partner ></h4>
+    </div>
   </section>
 </div>
 
@@ -117,9 +180,11 @@ export default {
     }
     .bluebutton{
       background-color: blue;
-      padding: 10px;
+      padding: 10px 15px;
       border-radius: 20px;
       margin-right: 30px;
+      display: flex;
+      align-items: center;
     }
     .transparentbutton{
       background-color: transparent;
@@ -130,6 +195,13 @@ export default {
     }
   }
 }
+  .playbutton{
+    color: blue;
+    background-color: white;
+    padding: 20px 22px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
   .play{
     width: 55%;
     height: 100%;
@@ -138,13 +210,7 @@ export default {
     align-items: center;
     position: relative;
   }
-  .playbutton{
-    color: blue;
-    background-color: white;
-    padding: 20px 22px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+
   .cardtop, .cardbot{
     width: 50px;
     height: 50px;
@@ -273,7 +339,7 @@ export default {
       color: gray;
       align-items: center;
       font-size: 11px;
-      width: 100px;
+      width: fit-content;
     }
     .redy{
       background-color: red;
@@ -310,4 +376,137 @@ export default {
   }
   
 }
+.playlist{
+  width: 80%;
+  margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  h4{
+    width: 30%;
+    font-size: 20px;
+  }
+  h6{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    a{
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .songs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    justify-content: center;
+      .card{
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2px 2px 20px 2px;
+    margin: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      h6{
+    width: 100%;
+    margin-left: 40px;
+    color: yellow;
+    font-size: 20px;
+  }
+
+  }
+  .first{
+    background-image: url(../assets/images/video2-2x.jpg);
+        
+  }
+  .second{
+    background-image: url(../assets/images/video7-2x.jpg);
+  }
+  .third{
+    background-image: url(../assets/images/video9-2x.jpg);
+  }
+  }
+}
+  .secondfloor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .scheda{
+      width: 250px;
+      margin: 15px 25px;
+    }
+    h5{
+      text-align: center;
+    }
+    h6{
+      color: blue;
+    }
+  }
+.email{
+  width: 100%;
+  height: 450px;
+  background-image: url(../assets/images/banner1-2x.jpg);
+  background-size: cover;
+  .left{
+    width: 50%;
+  }
+  .grey{
+    margin-top: 20px;
+  }
+  input{
+    width: 400px;
+    border-radius: 20px;
+    margin-right: 30px;
+    border: none;
+  }
+}
+.rettangoli{
+  background-color: black;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  .bluesquare{
+    margin: auto 40px;
+    width: 20%;
+    height: 80%;
+    border: solid 2px blue;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding: 0 20px;
+    .iconsquare{
+      margin-top: 30px;
+      font-size: 40px;
+    }
+    h5{
+      font-size: 18px;
+      margin-top: 30px;
+    }
+    h6{
+      font-size: 16px;
+      color: yellow;
+      margin-top: 30px;
+    }
+    p{
+      font-size: 14px;
+      color: lightgray;
+      margin-top: 20px;
+    }
+    h4{
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 30px;
+      cursor: pointer;
+      
+    }
+  }
+}
+
 </style>
