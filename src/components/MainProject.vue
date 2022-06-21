@@ -12,8 +12,6 @@
     </div>
     <div class="play">
       <font-awesome-icon class="playbutton" icon="fa-solid fa-play" />
-      <div class="cardtop"></div>
-      <div class="cardbot"></div>
     </div>
 
   </div>
@@ -248,12 +246,18 @@ export default {
       display: flex;
       align-items: center;
     }
+    .bluebutton:hover{
+      background-color: red;
+    }
     .transparentbutton{
       background-color: transparent;
       border: solid 2px white;
       padding: 10px;
       border-radius: 20px;
       margin-right: 30px;
+    }
+    .transparentbutton:hover{
+      background-color:red;
     }
   }
 }
@@ -435,7 +439,11 @@ export default {
         width: min-content;
         font-size: 15px;
       }
+
   }
+         .redbutton:hover{
+        background-color: blue;
+      }
   
 }
 .playlist{
@@ -628,6 +636,10 @@ export default {
       text-decoration: none;
       color: white;
     }
+      a:hover{
+        background-color: white;
+        color: black;
+      }
   }
 }
 .clubs{

@@ -30,6 +30,9 @@ a{
     padding: 10px;
     border-radius: 20px;
 }
+.specialblueclass:hover{
+  background-color: red;
+}
 .yellow{
     background-color: yellow;
     color: black;
