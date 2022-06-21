@@ -14,14 +14,14 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCartShopping, faDumbbell, faSpa } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faPlay, faRightLong, faClock } from '@fortawesome/free-solid-svg-icons'
-import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube, } from '@fortawesome/free-brands-svg-icons'
 
 
 /* add icons to the library */
 library.add(faCartShopping)
-library.add(faMagnifyingGlass, faRightLong, faClock, faDumbbell, faSpa)
+library.add(faMagnifyingGlass, faRightLong, faClock, faDumbbell, faSpa,)
 library.add(faPlay)
-library.add(faYoutube)
+library.add(faYoutube, faTwitter, faInstagram, faLinkedin, faFacebook)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
