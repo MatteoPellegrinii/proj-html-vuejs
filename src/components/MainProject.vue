@@ -110,15 +110,77 @@
       <h5>Crossfit workout</h5>
       <h6>Push your limits</h6>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam est explicabo, consequatur voluptatem ex ratione.</p>
-      <h4>FInd a partner ></h4>
+      <h4>Learn about crossfit ></h4>
     </div>
     <div class="bluesquare">
       <font-awesome-icon class="iconsquare" icon="fa-solid fa-spa" />
       <h5>Team training</h5>
       <h6>Find a partner</h6>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam est explicabo, consequatur voluptatem ex ratione.</p>
-      <h4>FInd a partner ></h4>
+      <h4>Schedule a workout ></h4>
     </div>
+  </section>
+  <section class="playlist">
+    <h4>Latest articles</h4>
+    <h6><a href="#">Read all articles ></a></h6>
+    <div class="songs">
+      <div class="card one">
+      </div>
+          <div class="card two">
+  
+      </div>
+          <div class="card three">
+  
+      </div>
+      <div class="secondfloor">
+        <div class="authorartcles">
+          <h5>The best protein shake</h5>
+          <h6>By admin</h6>
+        </div>
+       <div class="authorartcles">
+          <h5>Ultimate cardio workout</h5>
+          <h6>Increase your mobility</h6>
+        </div>
+        <div class="authorartcles">
+          <h5>New juice available now</h5>
+          <h6>Increase your mobility</h6>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="motivational">
+    <h2 class="motivation">"I've failed over and over in my life and that's why i succeed"</h2>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum nemo perspiciatis placeat! Dolore ab libero veniam doloribus earum, odit sint modi, </div>
+    <div class="bluebutton"><a href="#">Buy avada today ></a></div>
+  </section>
+  <section class="clubs">
+    <div class="cardclub">
+      <img src="../assets/images/sponsor-1-2x.png">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quod explicabo provident fugit minus culpa laborum molestiae eius</p>
+      <a href="#">Visit our studio ></a>
+    </div>
+    <div class="cardclub">
+      <img src="../assets/images/sponsor-2-2x.png">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quod explicabo provident fugit minus culpa laborum molestiae eius</p>
+      <a href="#">Visit our studio ></a>
+    </div>
+    <div class="cardclub">
+      <img src="../assets/images/sponsor-3-2x.png">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quod explicabo provident fugit minus culpa laborum molestiae eius</p>
+      <a href="#">Visit our studio ></a>
+    </div>
+    <div class="cardclub">
+      <img src="../assets/images/sponsor-4-2x.png">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quod explicabo provident fugit minus culpa laborum molestiae eius</p>
+      <a href="#">Visit our studio ></a>
+    </div>
+  </section>
+  <section class="crossfit">
+    <font-awesome-icon class="playbutton" icon="fa-solid fa-play" />
+    <h2>Crossfit of the day</h2>
+    <h3>November 15th, 2019</h3>
+    <a href="#">View all videos ></a>
   </section>
 </div>
 
@@ -506,6 +568,122 @@ export default {
       cursor: pointer;
       
     }
+  }
+}
+.one{
+  background-image: url(../assets/images/blog4-2x-400x258.jpg);
+}
+.two{
+  background-image: url(../assets/images/blog1-2x-400x258.jpg);
+}
+.three{
+  background-image: url(../assets/images/blog3-2x-400x258.jpg);
+}
+.secondfloor{
+      .authorartcles{
+      width: 250px;
+      margin: 15px 25px;
+    }
+    h5{
+      display: flex;
+      justify-content: flex-start;
+    }
+    h6{
+      display: flex;
+      justify-content: flex-start;
+      color: grey;
+    }
+}
+.motivational{
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/images/banner2-2x.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10% 0;
+  .motivation{
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  .description{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .bluebutton{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    a{
+      padding: 10px 30px;
+      border-radius: 20px;
+      background-color: blue;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+.clubs{
+  width: 70%;
+  margin: auto;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  .cardclub{
+    width: 25%;
+    padding: 10px;
+    height: 60%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 80%;
+    }
+    p{
+      margin: 20px 0;
+      color: gray;
+      font-size: 15px;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+.crossfit{
+  width: 100%;
+  height: 500px;
+  background-image: url(../assets/images/banner14-2x.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10% 20%;
+  h2{
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  h3{
+    color: yellow;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+  a{
+    color: white;
+    text-decoration: none;
   }
 }
 
